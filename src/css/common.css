@@ -1,0 +1,45 @@
+﻿/* reset: 重设外观 */
+body {background-color:#fff;color: #666;-webkit-text-size-adjust:none;}
+a { color: #666; text-decoration: none; border: 0; background-color: transparent; }
+a:hover,a:active { text-decoration: none; color:#2673BB;}
+a,area,div{blr:expression(this.onFocus=this.blur())}  /* For IE6、7 */
+a:active, a:focus{outline:none;} /* For IE8/Firefox */
+a:active, a:focus,div:active, div:focus{outline:none;}
+body,div,q,iframe,form,
+ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{ margin: 0; padding: 0;}
+img,fieldset{border: none 0;}
+img{max-width:100%;}
+body,td,textarea{word-break: break-all; line-height:1.2;}
+body,input,textarea,select,button{margin: 0; font-size: 12px;font-family:'微软雅黑', Simsun, sans-serif;}
+div,p,table,th,td{ font-size:1em; font-family:'微软雅黑', Simsun, sans-serif; line-height:inherit;}
+html,body{ overflow-x:hidden;overflow-y:auto;}
+
+ul,dl,li{list-style: none; font-family:'微软雅黑', Simsun, sans-serif;}
+em,i,u,q,s,dl,caption{ font-style: normal; font-weight: normal; text-decoration: none; }
+hr{ clear:both; margin:7px 0; +margin: 0;  border:0 none;font-size: 1px; line-height:1px;color: #ddd; background-color:#ddd; height: 1px;}
+h1,h2,h3,h4,h5,h6{color:#5a5a5a;}
+h1 { font-size: 24px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: normal;}
+h2 { font-size: 20px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: normal;}
+h3 { font-size: 16px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+h4 { font-size: 14px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+h5 { font-size: 13px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+h6 { font-size: 12px; font-family:'微软雅黑', Simsun, sans-serif; font-weight: bold;}
+em,i{color:#666}
+p{text-align: justify; text-justify: inter-ideograph; margin-top:0; margin-bottom:0;}
+textarea {line-height:1.2;}
+
+* html textarea,*+html textarea {overflow:auto; overflow-x: hidden; }/* 使多行文本框不显示默认的竖向滚动条 */
+* html iframe, * html frame {overflow:auto; }/* 使浮动窗口不显示默认的竖向滚动条 */
+* html input {overflow: hidden; }/* 使按钮文字不溢出 */
+/* end reset */
+/* Global:常用样式 */
+.fl{ float:left; _display:inline;}
+.fr{ float:right; _display:inline;}
+.clearfix{display: block; display: table; *display: inline-block; _height: 1%;}
+.clearfix:after {content:'\20'; display:block; clear:both;}
+.clearself{ overflow:hidden; _overflow:visible; _height:1%;}
+.inline-block{display:inline-block;*zoom: 1;*display: inline;vertical-align:middle;overflow:hidden;}
+.justify{ text-align: justify; text-justify: inter-ideograph;}
+.clear { font-size: 0px; height: 0px; line-height: 0px; overflow: hidden; clear: both;}
+/* end Global */
+

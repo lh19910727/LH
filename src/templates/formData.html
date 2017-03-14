@@ -1,0 +1,22 @@
+<form name="myForm"  novalidate="novalidate">
+	<div>
+		<lable for="_email">邮箱</lable>
+		<input type="email" id="_email" name="email" required ng-model="text" error-tip />
+		<!--<span class="error" ng-show="myForm.email.$error.required">
+            		不能为空
+        </span>
+         <span class="error" ng-show="myForm.email.$error.email">
+            	无效的邮箱格式
+        </span>-->
+	</div>
+	<div>
+		<lable for="username">姓名</lable>
+		<input type="text" id="username" name="username" required ng-pattern="word" ng-model="userName" />
+		<span class="error" ng-show="myForm.username.$error.required">
+            		不能为空
+        </span>
+         <span class="error" ng-show="myForm.username.$error.pattern">
+            	单个单词
+        </span>
+	</div>
+</form>

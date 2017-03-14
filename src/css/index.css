@@ -1,0 +1,176 @@
+a { color: #666; text-decoration: none; border: 0; background-color: transparent; }
+a:hover{ text-decoration: none; color:#666;}
+
+ul,li{
+	list-style: none;
+	padding:0!important;
+	margin:0!important;
+}
+.wrapper{
+	max-width:750px;
+	margin: 0 auto;
+}
+.top{
+	height:90px;
+	position: relative;
+	background:url(../img/nav.png) 0 0 repeat-x;
+}
+.top span{
+	width:156px;
+	height:30px;
+	line-height: 30px;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom: 0;
+	right:0;
+	margin:auto;
+	text-align: center;
+	font-size: 30px;
+	color:yellowgreen;
+}
+.con{
+	position: absolute;
+	top:90px;
+}
+
+.list{
+	padding: 0;
+	margin: 0;
+	background-color:rgba(0,0,0,.8);
+}
+.list li {
+	position: relative;
+	text-align: center;
+	/*margin-top: 10px;*/
+	line-height: 56px;
+	cursor: pointer;
+	border-top:1px solid #555;
+	
+	}
+.list li a {
+	display: block;
+  text-decoration: none;
+  color: #999;
+  font-size: 16px;
+ /* text-transform: uppercase;*/
+  position: relative;
+  z-index: 1000;
+  height:56px;
+}
+.list li span{
+ transition: all .6s;
+  position: absolute;
+  width: 0%;
+  height: 56px;
+  top: 0px;
+  left: 0px;
+  background: #d00355;
+  z-index: 0;
+  opacity: 0;
+}
+.list li:hover a{
+	transition: all .6s;
+	color: #FFF;
+}
+.list li:hover span{
+ width: 100%;
+ z-index: 3;
+ opacity: 1;
+}
+
+.list li .fa-angle-right {
+  position: absolute;
+  left: 150px;
+  top: 1px;
+}
+
+.list li .push {
+  margin-right: 10px;
+}
+	
+
+.error{
+	color:red;
+}
+form[name='myForm'] div{
+	margin: 10px 0;
+}
+
+
+/****markdown模块*****/
+.markdown,.netPage{
+	padding:10px  2% 0;
+	
+	
+}
+.markdown ul,.netPage ul{
+	overflow: hidden;
+	min-height: 530px;
+	box-sizing: border-box;
+}
+
+.markdown ul .li_inner,.netPage ul .li_inner{
+	padding:0 10px 10px 10px !important;
+	margin:10px 10px!important;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+	box-sizing: border-box;
+}
+.li_inner>a{
+	display: block;
+	height:100%;
+}
+
+/****公共样式部分******/
+.title{
+	position: relative;
+	padding:10px 80px 10px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+.title strong{
+	color:#333;
+	font-size:14px;
+}
+.title strong:hover{
+	text-decoration: underline;
+	color:#D00355;
+}
+.title span{
+	position: absolute;
+	top:10px;
+	right:10px;
+	color:#D00355;
+}
+
+.description{
+	max-width:100%;
+	height:40px;
+	line-height: 20px;
+	overflow: hidden;
+	word-break: break-all;
+}
+.pages{
+	width:100%;
+	padding:15px 0;
+	text-align: center;
+}
+.pages a{
+	display: inline-block;
+	margin: 0 10px;
+	padding:4px;
+	background-color: #ccc;
+	color:#fff;
+}
+.pages a:hover{
+	color:#D00355;
+}
+
+.indexList{
+	padding:0;
+	box-sizing: border-box;
+}
