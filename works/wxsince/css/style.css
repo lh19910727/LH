@@ -1,0 +1,193 @@
+/*音乐播放*/
+.music {
+	width: 1.6rem;
+	height: 1.6rem;
+	position: absolute;
+	right: .3rem;
+	top: .3rem;
+	z-index: 100;
+}
+
+.music .control {
+	width: 1.8rem;
+	height: 1.8rem;
+	background: url(../image/music_c0fda01.gif) transparent no-repeat center center;
+	background-size: contain;
+}
+
+.music .control .control-after {
+	width: 1rem;
+	height: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -.5rem;
+	margin-left: -.5rem;
+	background: url(../image/music_off_8d94020.png) transparent no-repeat center center;
+	background-size: 100% 100%;
+	-webkit-animation: music_play 1.2s linear infinite;
+	animation: music_play 1.2s linear infinite;
+	z-index: -1
+}
+
+.music.stopped .control {
+	background: 0 0;
+}
+
+.music.stopped .control .control-after {
+	-webkit-animation: none;
+	animation: none;
+}
+
+@-webkit-keyframes music_play {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes music_play {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+/*音乐播放结束*/
+
+.page {
+	position: relative;
+}
+
+.page>* {
+	position: absolute;
+}
+
+.load_box{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index: 10000000;
+	background-color: #fdcb49;
+	transition: all 0.8s;
+}
+.load{
+	width:3.4rem;
+	height:3rem;
+	position: absolute;
+	left:0;
+	top:34%;
+	left:50%;
+	margin-left: -1.5rem;
+	border-radius:3px;
+}
+.load_box p{
+	width:100%;
+	position: absolute;
+	left:0;
+	top:50%;
+	margin-top:-0.5rem;
+	height:1rem;
+	margin: 0;
+	padding:0;
+	color:#e88e00;
+	line-height: 1rem;
+	text-align: center;
+	font-size:0.4rem;
+}
+/*第一页css*/
+
+.p1_1 {
+	width: 3rem;
+	height:4.4rem;
+	left: 0.266667rem;
+	top: 0.4rem;
+}
+
+.p1_2 {
+	width: 3rem;
+	height:4.4rem;
+	right: 0.266667rem;
+	bottom: 0.4rem;
+}
+.p1_3 {
+	width: 3rem;
+	height:4.4rem;
+	left: 3.266667rem;
+	top:6.4rem;
+}
+
+.p1_2Ani {
+	animation: p1_2Ani 1s ease forwards;
+	-webkit-animation: p1_2Ani 1s ease forwards;
+}
+
+@keyframes p1_2Ani {
+	0% {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes p1_2Ani {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0.5);
+	}
+	50% {
+		-webkit-transform: scale(2);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.p2_1 {
+	width: 1rem;
+	height: 1.2rem;
+	left: 3rem;
+	top: 1rem;
+}
+.p2_2 {
+	width: 0.8rem;
+	height: 1rem;
+	left: 8rem;
+	top: 5rem;
+}
+.p2_3 {
+	width: 1rem;
+	height: 1.2rem;
+	left: 2rem;
+	top:8rem;
+}
+.p2_4 {
+	width: 1.1rem;
+	height: 1.6rem;
+	right: 3rem;
+	bottom: 2rem;
+}
+.p2_5{
+	width: 0.2rem;
+	height: 0.3rem;
+	left: 5rem;
+	top: 4rem;
+}
+.p2_6{
+	width: 0.7rem;
+	height: 1rem;
+	right: 3rem;
+	bottom:8rem;
+}
